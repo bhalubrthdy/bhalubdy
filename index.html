@@ -1247,23 +1247,23 @@
       <div class="carousel-wrap glass">
         <div class="carousel-track" id="carouselTrack">
           <div class="slide">
-            <img src="https://raw.githubusercontent.com/bhalubrthdy/bhalubdy/main/images/pic1.jpg" alt="Memory 1" loading="lazy" />
+            <img src="https://raw.githubusercontent.com/bhalubr/bhalubdy/main/images/pic1.jpg" alt="Memory 1" loading="lazy" />
             <div class="slide-caption">That silly day when we couldn't stop laughing 😂</div>
           </div>
           <div class="slide">
-            <img src="https://raw.githubusercontent.com/bhalubrthdy/bhalubdy/main/images/pic2.jpg" alt="Memory 2" loading="lazy" />
+            <img src="https://raw.githubusercontent.com/bhalubr/bhalubdy/main/images/pic2.jpg" alt="Memory 2" loading="lazy" />
             <div class="slide-caption">Family trip — pure chaos & pure love ❤️</div>
           </div>
           <div class="slide">
-            <img src="https://raw.githubusercontent.com/bhalubrthdy/bhalubdy/main/images/pic3.jpg" alt="Memory 3" loading="lazy" />
+            <img src="https://raw.githubusercontent.com/bhalubr/bhalubdy/main/images/pic3.jpg" alt="Memory 3" loading="lazy" />
             <div class="slide-caption">Your smile that lights up everything 🌟</div>
           </div>
           <div class="slide">
-            <img src="https://raw.githubusercontent.com/bhalubrthdy/bhalubdy/main/images/pic4.jpg" alt="Memory 4" loading="lazy" />
+            <img src="https://raw.githubusercontent.com/bhalubr/bhalubdy/main/images/pic4.jpg" alt="Memory 4" loading="lazy" />
             <div class="slide-caption">Late night talks that meant the world</div>
           </div>
           <div class="slide">
-            <img src="https://raw.githubusercontent.com/bhalubrthdy/bhalubdy/main/images/pic5.jpg" alt="Memory 5" loading="lazy" />
+            <img src="https://raw.githubusercontent.com/bhalubr/bhalubdy/main/images/pic5.jpg" alt="Memory 5" loading="lazy" />
             <div class="slide-caption">Just us being us — forever favourite moment</div>
           </div>
         </div>
@@ -1334,7 +1334,7 @@
   </div>
 
   <audio id="bgMusic" loop preload="auto">
-    <source src="https://raw.githubusercontent.com/bhalubrthdy/bhalubdy/main/music/ambient.mp3" type="audio/mpeg">
+    <source src="https://raw.githubusercontent.com/bhalubr/bhalubdy/main/music/ambient.mp3" type="audio/mpeg">
   </audio>
   <audio id="radioAudio" preload="auto"></audio>
 
@@ -1573,12 +1573,12 @@
     }
 
     const stations = [
-      { name: "Tum Hi Ho", artist: "Arijit Singh", freq: "98.6", url: "https://raw.githubusercontent.com/bhalubrthdy/bhalubdy/main/music/song1.mp3" },
-      { name: "Kesariya", artist: "Arijit Singh", freq: "99.1", url: "https://raw.githubusercontent.com/bhalubrthdy/bhalubdy/main/music/song2.mp3" },
-      { name: "Raataan Lambiyan", artist: "Jubin + Asees", freq: "100.2", url: "https://raw.githubusercontent.com/bhalubrthdy/bhalubdy/main/music/song3.mp3" },
-      { name: "Apna Bana Le", artist: "Arijit Singh", freq: "101.5", url: "https://raw.githubusercontent.com/bhalubrthdy/bhalubdy/main/music/song4.mp3" },
-      { name: "Tere Hawale", artist: "Arijit + Shilpa", freq: "102.8", url: "https://raw.githubusercontent.com/bhalubrthdy/bhalubdy/main/music/song5.mp3" },
-      { name: "Soft Instrumental", artist: "Bhalu Vibes", freq: "104.0", url: "https://raw.githubusercontent.com/bhalubrthdy/bhalubdy/main/music/song6.mp3" }
+      { name: "Tum Hi Ho", artist: "Arijit Singh", freq: "98.6", url: "https://raw.githubusercontent.com/bhalubr/bhalubdy/main/music/tum-hi-ho.mp3" },
+      { name: "Kesariya", artist: "Arijit Singh", freq: "99.1", url: "https://raw.githubusercontent.com/bhalubr/bhalubdy/main/music/kesariya.mp3" },
+      { name: "Raataan Lambiyan", artist: "Jubin + Asees", freq: "100.2", url: "https://raw.githubusercontent.com/bhalubr/bhalubdy/main/music/raataan-lambiyan.mp3" },
+      { name: "Apna Bana Le", artist: "Arijit Singh", freq: "101.5", url: "https://raw.githubusercontent.com/bhalubr/bhalubdy/main/music/apna-bana-le.mp3" },
+      { name: "Tere Hawale", artist: "Arijit + Shilpa", freq: "102.8", url: "https://raw.githubusercontent.com/bhalubr/bhalubdy/main/music/tere-hawale.mp3" },
+      { name: "Soft Instrumental", artist: "Bhalu Vibes", freq: "104.0", url: "https://raw.githubusercontent.com/bhalubr/bhalubdy/main/music/soft-instrumental.mp3" }
     ];
 
     let currentStation = 0;
@@ -1592,7 +1592,7 @@
 
     function initRadio() {
       stationList.innerHTML = stations.map((s, i) => `
-        <div class="station-item ${i===0?'active':''}" data-idx="${i}">
+        <div class="station-item \( {i===0?'active':''}" data-idx=" \){i}">
           <span class="num">${String(i+1).padStart(2,'0')}</span>
           <span class="s-name">${s.name}</span>
         </div>
